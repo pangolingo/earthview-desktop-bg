@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.user.loginscript</string>
+    <key>Program</key>
+    <string>/Users/username/path/to/earthview-desktop-bg/script.sh</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/username/path/to/earthview-desktop-bg</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <false/>
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key>
+      <string>/bin:/usr/bin:/usr/local/bin/</string>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/tmp/earthview_desktop_bg.stdout</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/earthview_desktop_bg.stderr</string>
+  </dict>
+</plist>
