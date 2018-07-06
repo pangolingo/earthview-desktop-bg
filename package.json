@@ -4,14 +4,14 @@
   "description": "set desktop background",
   "main": "index.js",
   "scripts": {
-    "build": "babel . -d lib",
-    "execute": "node lib/index.js",
-    "build-ex": "npm run build; npm run execute"
+    "start": "babel-node index.js"
   },
   "author": "Devin Frenze",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^2.1.2"
+    "node-fetch": "^2.1.2",
+    "request": "^2.87.0",
+    "wallpaper": "^3.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
