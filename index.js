@@ -37,9 +37,13 @@ function getAndSetDesktopBg(imageUri) {
   const imageName = getFilename(imageUri);
   const imagePath = `${directory}/${imageName}`;
 
-  downloadImage(imageUri, imagePath)
-    .then(() => setDesktopBg(imagePath))
-    .catch(() => console.log(`could not download image ${imageUri} to ${imagePath}`));
+  if (fs.existsSync(imagePath)) {
+    setDesktopBg(imagePath)
+  } else {
+    downloadImage(imageUri, imagePath)
+      .then(() => setDesktopBg(imagePath))
+      .catch(() => console.log(`could not download image ${imageUri} to ${imagePath}`));
+  }
 }
 
 const imageUri = sample(earthview).image;
