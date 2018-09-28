@@ -9,7 +9,10 @@ picture.
 
 - clone this repository
 - run `npm install` to install dependencies
-- run `npm start` to set your desktop background to a random google earth image
+- get a Google Maps API key from [The Google Maps Platform](https://cloud.google.com/maps-platform#get-started)
+- set environment variables `GOOGLE_MAPS_API_KEY` and `GOOGLE_MAPS_API_SIGNING_SECRET`
+- run `npm start` to set your desktop background to a random street view image
+- run `npm start pretty` to set your background to a curated google earth image
 
 ## Mac OS
 
